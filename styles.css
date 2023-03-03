@@ -6,6 +6,7 @@
   --fs-s-: 1.4rem;
   --fs-xs-: 1.2rem;
   --fs-xxs-: 1.1rem;
+  --fs-xxxs-: .9rem
 }
 
 @media screen and (max-width: 990px) {
@@ -17,6 +18,8 @@
     --fs-s-: 1.2rem;
     --fs-xs-: 1rem;
     --fs-xxs-: 0.9rem;
+    --fs-xxxs-: .7rem
+
   }
 }
 @media screen and (max-width: 725px) {
@@ -557,15 +560,15 @@ footer iframe {
 
 .footer-title h1 {
   font-size: var(--fs-xxl-);
+  margin-bottom: 5px;
 }
 
 .footer-title h2 {
   font-size: var(--fs-m-);
-  margin-bottom: 10px;
 }
 
 .footer-title span {
-  font-size: var(--fs-xxs-);
+  font-size: var(--fs-xxxs-);
   font-style: italic;
 }
 
