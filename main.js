@@ -1,3 +1,18 @@
+const FAQs = Array.from(document.querySelectorAll('.question-answer'))
+
+FAQs.forEach(FAQ => {
+    FAQ.addEventListener('click', () => {
+        for(let i = 0; i < FAQs.length; i++){
+            FAQs[i].classList.remove('active')
+        }
+
+        FAQ.classList.add('active')
+    })
+
+
+})
+
+
 // // ========= slider =======
 // const slideContainer = document.querySelector('.container');
 // const slide = document.querySelector('.slides');

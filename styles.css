@@ -345,14 +345,26 @@ section h2 {
   height: 400px;
 }
 
-.gallery.line-two img {
+.gallery.line-two img,
+.line-three img {
   width: 33%;
   height: 400px;
 }
 
 .line-two img:nth-of-type(2) {
-  height: 500px;
+  height: 450px;
   margin-top: -100px;
+}
+
+.line-three img {
+  width: 33%;
+  height: 400px;
+}
+
+.line-three img:nth-of-type(2) {
+  width: 33%;
+  height: 450px;
+  margin-top: -50px;
 }
 
 /* ===============contact and hours======== */
@@ -567,6 +579,44 @@ footer iframe {
   background-color: transparent;
   border: none;
 }
+
+/* =========================== FAQs ==================== */
+
+.FAQs{
+  margin-top: 100px;
+  text-align: left;
+  width: 80%;
+  border: 2px solid black;
+}
+
+.FAQs a {
+  text-decoration: underline;
+}
+
+.FAQs a:hover {
+  border-bottom: none;
+}
+
+.FAQs .question-answer {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.FAQs .question-answer h5{
+  font-size: var(--fs-s-);
+  margin-bottom: 5px;
+}
+
+.FAQs .question-answer p{
+ display: none;
+}
+
+.FAQs .question-answer.active p{
+ display: unset;
+}
+
+
+
 /* ================== media queries ==== */
 
 @media screen and (max-width: 1140px) {
@@ -621,21 +671,28 @@ footer iframe {
 
   .gallery.line-one img {
     width: 30%;
-    height: 400px;
+    height: 350px;
   }
 
   .line-one img:nth-of-type(2) {
-    height: 300px;
+    height: 320px;
   }
 
-  .gallery.line-two img {
+  .gallery.line-two img,
+  .gallery.line-three img{
     width: 30%;
     height: 300px;
   }
 
   .line-two img:nth-of-type(2) {
-    height: 400px;
-    margin-top: -100px;
+    height: 310px;
+    margin-top: -30px;
+  }
+
+  .line-three img:nth-of-type(2) {
+    width: 30%;
+    height: 320px;
+    margin-top: -20px;
   }
 
   .unique-img {
@@ -731,17 +788,23 @@ footer iframe {
   }
 
   .line-one img:nth-of-type(2) {
-    height: 200px;
+    height: 210px;
   }
 
-  .gallery.line-two img {
+  .gallery.line-two img,
+  .gallery.line-three img {
     width: 33%;
     height: 200px;
   }
 
   .line-two img:nth-of-type(2) {
-    height: 250px;
-    margin-top: -50px;
+    height: 220px;
+    margin-top: -40px;
+  }
+
+  .gallery.line-three img:nth-of-type(2){
+    height: 220px;
+    margin-top: -20px;
   }
 
   .contact-hours-wrap {
@@ -779,6 +842,11 @@ footer iframe {
     margin: auto;
     padding: 10px 30px;
     font-size: var(--fs-s-);
+  }
+
+  .FAQs {
+    width: 105%;
+
   }
 
   footer {
